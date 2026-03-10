@@ -81,6 +81,7 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+  text-transform: uppercase;
 }
 /* Roboto Mono */
 @font-face {
@@ -365,11 +366,27 @@ body {
 .btn-black {
   background-color: #000;
   color: #fff;
+  border: 1px solid #000;
+}
+
+.btn-black:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  transform: translateY(-1px);
 }
 
 .btn-yellow {
   background-color: #FFBA00;
   color: rgb(46, 48, 46);
+  border: 1px solid #FFBA00;
+}
+
+.btn-yellow:hover {
+  background-color: transparent;
+  border: 1px solid #FFBA00;
+  color: #FFBA00;
+  transform: translateY(-1px);
 }
 
 .grid-container {
@@ -378,6 +395,10 @@ body {
 
 .inline-block {
   display: inline-block !important;
+}
+
+.ucase {
+  text-transform: uppercase;
 }
 
 .site-header {
@@ -443,10 +464,11 @@ body {
   right: -10px;
 }
 
-.getStarted {
+.btngetStarted {
   width: 201px;
   height: 46px;
   margin-right: 16px;
+  line-height: 46px;
 }
 
 .hero {
@@ -489,6 +511,13 @@ body {
   line-height: 56px;
 }
 
+.hero .btnTryToday:hover {
+  background-color: transparent;
+  border: 1px solid #FFBA00;
+  color: #FFBA00;
+  transform: translateY(-1px);
+}
+
 .hero .leftSide {
   position: relative;
 }
@@ -525,7 +554,7 @@ body {
   font-size: 18px;
 }
 
-.section2 h1 {
+.section2 h2 {
   font-family: "Inter-Black";
   font-size: 77px;
   line-height: 80px;
@@ -593,7 +622,15 @@ body {
   font-family: "Inter-Black";
 }
 
-.section2 .part3 {
+.section2 .part3 hr {
+  width: 100%;
+  max-width: unset;
+  height: 1px;
+  border: 1.5px solid rgb(70, 79, 110);
+  opacity: 0.2;
+}
+
+.section2 .part2 .grid-container {
   max-width: 700px;
   margin: 0px auto;
 }
@@ -603,9 +640,11 @@ body {
   background-size: cover;
   height: calc(100vh - 40px);
   position: relative;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
-.section3 .img h1 {
+.section3 .img h2 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -641,6 +680,180 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   margin-right: 50px;
+}
+
+.section4 {
+  background-color: #EFF7FA;
+  font-family: "RobotoMono";
+  font-size: 18px;
+  padding-top: 32px;
+}
+
+.section4 h2 {
+  text-transform: uppercase;
+  font-family: "Inter-Black";
+  font-size: 50px;
+  max-width: 30%;
+  line-height: 50px;
+}
+
+.section4 .grid-x .cell > div {
+  max-width: 360px;
+  margin: 0px auto;
+  font-size: 15px;
+}
+
+.section4 .grid-x .cell > div h3 {
+  font-family: "Inter-Black";
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.section5 {
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: "RobotoMono";
+  font-size: 18px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.section5 hr {
+  height: 2px;
+  border: 2px solid rgb(29, 60, 52);
+  opacity: 0.1;
+}
+
+.section5 h2 {
+  font-family: "Inter-Black";
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.section5 .btnStart {
+  background-color: #FFBA00;
+  text-align: center;
+  border-radius: 35px;
+  color: #000;
+  font-family: "RobotoMono";
+  line-height: 37px;
+  height: 37px;
+  padding: 0px 37px;
+  display: inline-block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.section5 .btnStart:hover {
+  background-color: #fff;
+  border: 1px solid #FFBA00;
+  color: #FFBA00;
+  transform: translateY(-1px);
+}
+
+.section5 h6 {
+  font-family: "RobotoMono";
+  font-size: 18px;
+}
+
+.section5 .content ul li {
+  padding-left: 40px;
+  background: url("../assets/images/bullet.png") no-repeat 0 6px;
+  margin-bottom: 16px;
+}
+
+.section5 .btnAddToCart {
+  line-height: 65px;
+  border-radius: 36px;
+  padding: 0px 46px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  display: inline-block;
+  transition: background-color 1s ease, color 1s ease, border-color 1s ease, transform 1s ease;
+}
+
+.section5 .btnAddToCart:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  transform: translateY(-1px);
+}
+
+.section6 {
+  background-color: #EFF7FA;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: "RobotoMono";
+  font-size: 18px;
+}
+
+.section5 hr {
+  height: 2px;
+  border: 2px solid rgb(29, 60, 52);
+  opacity: 0.1;
+}
+
+.section5 h2 {
+  font-family: "Inter-Black";
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.section5 .btnStart {
+  background-color: #FFBA00;
+  text-align: center;
+  border-radius: 35px;
+  color: #000;
+  font-family: "RobotoMono";
+  line-height: 37px;
+  height: 37px;
+  padding: 0px 37px;
+  display: inline-block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.section5 .btnStart:hover {
+  background-color: #fff;
+  border: 1px solid #FFBA00;
+  color: #FFBA00;
+  transform: translateY(-1px);
+}
+
+.section5 h6 {
+  font-family: "RobotoMono";
+  font-size: 18px;
+}
+
+.section5 .content ul li {
+  padding-left: 40px;
+  background: url("../assets/images/bullet.png") no-repeat 0 6px;
+  margin-bottom: 16px;
+}
+
+.section5 .btnAddToCart {
+  line-height: 65px;
+  border-radius: 36px;
+  padding: 0px 46px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  display: inline-block;
+  transition: background-color 1s ease, color 1s ease, border-color 1s ease, transform 1s ease;
+}
+
+.section5 .btnAddToCart:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  transform: translateY(-1px);
 }
 
 .product-card {

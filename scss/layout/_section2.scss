@@ -4,7 +4,7 @@
 	font-size: 18px;
 
 }
-.section2 h1{
+.section2 h2{
 	font-family: "Inter-Black";
 	font-size:77px;
 	line-height:80px;
@@ -15,6 +15,7 @@
 	padding:0;
 	margin:0;
 }
+
 .section2 .content ul li{
 	padding-left:40px;
 	background: url("../assets/images/bullet.png") no-repeat 0 6px;
@@ -68,7 +69,16 @@
 	font-size:50px;
 	font-family: 'Inter-Black';
 }
-.section2 .part3{
+.section2 .part3 hr{
+	width:100%;
+	max-width:unset;
+	height: 1px;
+	border: 1.5px solid rgba(70, 79, 110, 1);
+	opacity: 0.2;
+}
+
+.section2 .part2 .grid-container{
 	max-width: 700px;
 	margin: 0px auto;
+	
 }

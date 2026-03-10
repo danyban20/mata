@@ -3,8 +3,10 @@
 	background-size:cover;
 	height:calc(100vh - 40px);
 	position:relative;
+	border-top:1px solid $primary-color;
+	border-bottom:1px solid $primary-color;
 }
-.section3  .img h1{
+.section3  .img h2{
 	position:absolute;
 	top:30%;
 	left:50%;

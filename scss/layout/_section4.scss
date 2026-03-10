@@ -1,0 +1,26 @@
+.section4{
+	background-color: $color-light-blue;
+	font-family: "RobotoMono";
+	font-size: 18px;
+	padding-top:$spacing-xl;
+
+}
+.section4 h2{
+	text-transform: uppercase;
+	font-family: 'Inter-Black';
+	font-size: 50px;
+	max-width:30%;
+	line-height: 50px;
+
+}
+.section4 .grid-x .cell > div{
+	max-width:360px;
+	margin:0px auto;
+	font-size:15px;
+}
+.section4 .grid-x .cell > div h3{
+	font-family: 'Inter-Black';
+	font-size: 23px;
+	text-transform: uppercase;
+	margin-top:$spacing-md;
+}

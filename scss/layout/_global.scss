@@ -45,12 +45,25 @@ $spacing-sizes: (sm: $spacing-sm, md: $spacing-md, lg: $spacing-lg, xl: $spacing
 .btn-black{
 	background-color:$primary-color;
 	color:$color-white;
-
+	border:1px solid $primary-color;
+}
+.btn-black:hover{
+	background-color: $color-white;
+	border:1px solid $primary-color;
+	color:$primary-color;
+	transform: translateY(-1px);
 }
 .btn-yellow{
 	background-color: $color-yellow;	
 	color: rgba(46, 48, 46, 1);
+	border:1px solid $color-yellow;
 
+}
+.btn-yellow:hover{
+	background-color:transparent;
+	border:1px solid $color-yellow;
+	color:$color-yellow;
+	transform: translateY(-1px);
 }
 
 .grid-container{
@@ -58,4 +71,7 @@ $spacing-sizes: (sm: $spacing-sm, md: $spacing-md, lg: $spacing-lg, xl: $spacing
 }
 .inline-block {
   display: inline-block !important;
+}
+.ucase{
+	text-transform: uppercase;
 }

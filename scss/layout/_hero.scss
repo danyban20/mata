@@ -38,6 +38,12 @@
 	text-align: center;
 	line-height: 56px;
 }
+.hero .btnTryToday:hover{
+	background-color:transparent;
+	border:1px solid $color-yellow;
+	color:$color-yellow;
+	transform: translateY(-1px);
+}
 
 .hero .leftSide{
 	position:relative;
