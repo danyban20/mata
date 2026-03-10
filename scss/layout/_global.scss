@@ -30,17 +30,20 @@ $spacing-sizes: (sm: $spacing-sm, md: $spacing-md, lg: $spacing-lg, xl: $spacing
 .spacer-w-sm { width: $spacing-sm; display: inline-block; }
 .spacer-w-md { width: $spacing-md; display: inline-block; }
 .spacer-w-lg { width: $spacing-lg; display: inline-block; }
-
+.w-100{
+	width:100%;
+}
 .btn-rounded{
 	border-radius: 35px;
 	display:inline-block;
-	width:100%;
 	height: 51px;
 	font-family: RobotoMono;
 	font-size: 18px;
 	font-weight: 400;
 	text-align: center;
 	line-height: 51px;
+	padding-left:45px;
+	padding-right:45px;
 }
 .btn-black{
 	background-color:$primary-color;

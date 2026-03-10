@@ -1,19 +1,21 @@
-.section6{
+.section7{
 	background-color: $color-light-blue;
 	padding-top:$spacing-xl;
 	padding-bottom :$spacing-xl;
 	font-family: 'RobotoMono';
 	font-size: 18px;
+	background-color: rgba(41, 42, 53, 1);
 }
-.section6 .grid-container{
+.section7 .grid-container{
 	padding-top:$spacing-xl;
 	padding-bottom :$spacing-xl;
-	
+
 }
-.section6 h2{
+.section7 h2{
 	font-family: 'Inter-Black';
-	font-size:50px;
+	font-size:80px;
 	text-transform: uppercase;
+	color:$color-white;
 }
 .section6 .txtinfo b{
 	font-family: 'RobotoMono';

@@ -351,16 +351,21 @@ body {
   display: inline-block;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .btn-rounded {
   border-radius: 35px;
   display: inline-block;
-  width: 100%;
   height: 51px;
   font-family: RobotoMono;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
   line-height: 51px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .btn-black {
@@ -635,6 +640,11 @@ body {
   margin: 0px auto;
 }
 
+.section3 {
+  background-color: #EFF7FA;
+  padding-bottom: 24px;
+}
+
 .section3 .img {
   background: url("../assets/images/section3-bg.jpg") no-repeat top center;
   background-size: cover;
@@ -659,6 +669,7 @@ body {
   width: 100%;
   overflow: hidden;
   height: 40px;
+  margin-top: 24px;
 }
 
 .section3 .carousel ul {
@@ -735,15 +746,6 @@ body {
 }
 
 .section5 .btnStart {
-  background-color: #FFBA00;
-  text-align: center;
-  border-radius: 35px;
-  color: #000;
-  font-family: "RobotoMono";
-  line-height: 37px;
-  height: 37px;
-  padding: 0px 37px;
-  display: inline-block;
   margin-top: 32px;
   margin-bottom: 32px;
 }
@@ -792,68 +794,62 @@ body {
   font-size: 18px;
 }
 
-.section5 hr {
-  height: 2px;
-  border: 2px solid rgb(29, 60, 52);
-  opacity: 0.1;
+.section6 .grid-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.section5 h2 {
+.section6 h2 {
   font-family: "Inter-Black";
   font-size: 50px;
-  line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 32px;
 }
 
-.section5 .btnStart {
-  background-color: #FFBA00;
-  text-align: center;
-  border-radius: 35px;
-  color: #000;
+.section6 .txtinfo b {
   font-family: "RobotoMono";
-  line-height: 37px;
-  height: 37px;
-  padding: 0px 37px;
-  display: inline-block;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  font-weight: normal;
+  color: #434C6C;
 }
 
-.section5 .btnStart:hover {
-  background-color: #fff;
-  border: 1px solid #FFBA00;
-  color: #FFBA00;
-  transform: translateY(-1px);
+.section6 .txtinfo p {
+  font-family: "Aber Mono";
+  font-size: 12px;
+  color: #434C6C;
+  font-weight: 700;
 }
 
-.section5 h6 {
+.section7 {
+  background-color: #EFF7FA;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: "RobotoMono";
   font-size: 18px;
+  background-color: rgb(41, 42, 53);
 }
 
-.section5 .content ul li {
-  padding-left: 40px;
-  background: url("../assets/images/bullet.png") no-repeat 0 6px;
-  margin-bottom: 16px;
+.section7 .grid-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.section5 .btnAddToCart {
-  line-height: 65px;
-  border-radius: 36px;
-  padding: 0px 46px;
+.section7 h2 {
+  font-family: "Inter-Black";
+  font-size: 80px;
+  text-transform: uppercase;
   color: #fff;
-  background-color: #000;
-  border: 1px solid #000;
-  display: inline-block;
-  transition: background-color 1s ease, color 1s ease, border-color 1s ease, transform 1s ease;
 }
 
-.section5 .btnAddToCart:hover {
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #000;
-  transform: translateY(-1px);
+.section6 .txtinfo b {
+  font-family: "RobotoMono";
+  font-weight: normal;
+  color: #434C6C;
+}
+
+.section6 .txtinfo p {
+  font-family: "Aber Mono";
+  font-size: 12px;
+  color: #434C6C;
+  font-weight: 700;
 }
 
 .product-card {
