@@ -88,7 +88,16 @@
 	right:-10px;
 }
 .btngetStarted{
-	height: 46px;
-	margin-right:$spacing-md;
-	line-height: 46px ;
+		height: 46px;
+		margin-right:$spacing-md;
+		line-height: 46px ;
+		padding-left:35px;
+		padding-right:35px;
+}
+@media screen and (max-width: 64em) {
+
+}
+@media screen and (max-width: 40em) { /* small down = 640px */
+	.btngetStarted{
+	}
 }

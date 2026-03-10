@@ -545,8 +545,11 @@ body {
   height: 46px;
   margin-right: 16px;
   line-height: 46px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
+@media screen and (max-width: 40em) { /* small down = 640px */ }
 .hero {
   background: linear-gradient(232deg, rgb(70, 78, 112) 0%, rgb(32, 55, 70) 100%);
   padding-top: 60px !important;
