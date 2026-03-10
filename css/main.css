@@ -477,6 +477,43 @@ body {
 
 .main-menu {
   display: inline-block;
+  position: relative;
+}
+
+.main-menu #main-menu {
+  position: fixed;
+  left: -300px;
+  top: 0;
+  width: 300px;
+  background-color: #fff;
+  height: 100vh;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.main-menu #main-menu.active {
+  left: 0;
+}
+
+.main-menu #main-menu .close {
+  text-align: right;
+  font-size: 30px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.main-menu #main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu #main-menu ul li a {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  color: #222430;
+  font-family: "RobotoMono";
+  padding: 0px 10px;
 }
 
 .site-logo {

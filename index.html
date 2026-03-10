@@ -17,6 +17,17 @@
 			<div class="cell large-2 medium-4 small-12 ">
 				<div class="main-menu">
 					<a href=""><img src="assets/images/menu.svg" ></a>
+					<div id="main-menu">
+						<div class="close"><a href="#">&times;</a></div>
+						<div>
+							<ul>
+								<li><a href="#">Link Here</a></li>
+								<li><a href="#">Link Here</a></li>
+								<li><a href="#">Link Here</a></li>
+								<li><a href="#">Link Here</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<img src="assets/images/logo.svg" class="site-logo">
 			</div>
@@ -520,24 +531,55 @@
 
 <script>
 $(function () {
+	//SCROLLING CAROUSEL FOR SECTION 3
 	let $carousel = $('.carousel');
 	let $list = $carousel.find('ul');
 
-	function startScroll() {
-		let containerWidth = $carousel.width();
-		let listWidth = $list.outerWidth(true);
+	let speed = 200; // pixels per second
+	let animationFrame;
+	let lastTimestamp;
+	let paused = false;
 
-		$list.css({ left: containerWidth });
+	function step(timestamp) {
+		if (!lastTimestamp) lastTimestamp = timestamp;
 
-		$list.animate(
-			{ left: -listWidth },
-			15000, // speed (higher = slower)
-			'linear',
-			startScroll
-		);
+		let delta = timestamp - lastTimestamp;
+		lastTimestamp = timestamp;
+
+		if (!paused) {
+			let left = parseFloat($list.css('left')) || 0;
+			left -= (speed * delta) / 1000;
+
+			let listWidth = $list.outerWidth(true);
+			let containerWidth = $carousel.width();
+
+			if (left <= -listWidth) {
+				left = containerWidth;
+			}
+
+			$list.css('left', left);
+		}
+
+		animationFrame = requestAnimationFrame(step);
 	}
 
-	startScroll();
+	// start position
+	$list.css('left', $carousel.width());
+	requestAnimationFrame(step);
+
+	// hover pause
+	$carousel.on('mouseenter', () => paused = true);
+	$carousel.on('mouseleave', () => paused = false);
+
+	// SHOW ? HIDE MAIN MENU
+
+	$('.main-menu').find('a').click(function (e){
+		$('#main-menu').addClass('active');
+		e.preventDefault();
+	})
+	$('#main-menu').find('.close').click(function (){
+		$('#main-menu').removeClass('active');
+	})
 });
 </script>
 
