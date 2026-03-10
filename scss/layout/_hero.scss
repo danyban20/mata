@@ -1,0 +1,48 @@
+.hero{
+	height: 757px;
+	background: linear-gradient(232deg, 
+	rgba(70, 78, 112, 1) 0%, 
+	rgba(32, 55, 70, 1) 100%);	
+	padding-top:60px !important;
+	padding-bottom:60px;
+} 
+
+.hero h1.headline{
+	width: 670px;
+ 	height: 165px;
+	color: rgba(255, 250, 246, 1);
+	font-family: Inter;
+	font-size: 64px;
+	font-weight: 700;
+	font-family: 'Inter-Black';
+	letter-spacing: -1.07px;
+	text-transform: uppercase;	
+	line-height:53px;
+}
+.hero h3{
+	width: 412px;
+	height: 24px;
+	color: rgba(255, 255, 255, 1);
+	font-family: RobotoMono;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;	
+	margin-bottom:0
+}
+
+.hero .btnTryToday{
+	margin-top:25px;
+	border-radius: 35px;
+	background-color: $color-yellow;	
+	display:inline-block;
+	width: 347px;
+	height: 51px;
+	color: rgba(46, 48, 46, 1);
+	font-family: RobotoMono;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 24px;
+	padding-top:13px;
+	text-transform: uppercase;
+}
