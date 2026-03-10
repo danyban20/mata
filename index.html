@@ -112,11 +112,11 @@
 						<div class="cellcontent">
 							<span class="stepnum">1</span>
 							<div><img src="assets/images/Wash your face with our Bamboo Charcoal Cleanser.png"></div>
-							<div class="grid grid-x">
-								<div class="cell large-2 medium-2 sm-12">
+							<div class="grid grid-x mt-md">
+								<div class="cell large-3 medium-3  sm-12">
 									<img src="assets/images/cleanser.png">
 								</div>
-								<div class="cell large-10 medium-10 sm-12">Wash your face with our Bamboo Charcoal Cleanser</div>
+								<div class="cell large-9 medium-9 sm-12">Wash your face with our Bamboo Charcoal Cleanser</div>
 							</div>
 						</div>
 					</div>
@@ -124,11 +124,11 @@
 						<div class="cellcontent">
 							<span class="stepnum">2</span>
 							<div><img src="assets/images/Apply a dime size amount of All Day Moisturizer evenly to your face.png"></div>
-							<div class="grid grid-x">
-								<div class="cell large-2 medium-2 sm-12">
+							<div class="grid grid-x mt-md">
+								<div class="cell large-3 medium-3  sm-12">
 									<img src="assets/images/moisturizer.png">
 								</div>
-								<div class="cell large-10 medium-10 sm-12">Apply a dime size amount of All Day Moisturizer evenly to your face</div>
+								<div class="cell large-9 medium-9 sm-12">Apply a dime size amount of All Day Moisturizer evenly to your face</div>
 							</div>
 						</div>
 					</div>
@@ -136,24 +136,70 @@
 						<div class="cellcontent">
 							<span class="stepnum">3</span>
 							<div><img src="assets/images/Apply small amount of our Eye Cream under your eyes and around the sides.png"></div>
-							<div class="grid grid-x">
-								<div class="cell large-2 medium-2 sm-12">
+							<div class="grid grid-x mt-md">
+								<div class="cell large-3 medium-3  sm-12">
 									<img src="assets/images/stick.png">
 								</div>
-								<div class="cell large-10 medium-10 sm-12">Apply small amount of our Eye Cream under your eyes and around the sides</div>
+								<div class="cell large-9 medium-9 sm-12">Apply small amount of our Eye Cream under your eyes and around the sides</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
+		<div class="spacer-xl"></div>
+		<div class="spacer-xl"></div>
+		<div class="spacer-xl"></div>
+		<div class="spacer-xl"></div>
+			<div class="part3 text-center">
+				<h2 class="text-center">Results you can see</h2>
+				<p class="text-center">A simple skincare routine is essential to reduce and prevent fine lines, wrinkles, dry skin, and dark splotches that start to appear on your face as you age. </p>
+				<p>If you dont feel better and see resuilts in 30 days, you can keep the product and we’ll send you a full refund</p>
 		</div>
+		<div class="spacer-xl"></div>
+		<div class="spacer-xl"></div>
 	</div>
 </section>
+<div class="section3">
+	<div class="img">
+		<h1>“The one minute routine that will save your face”</h1>
+	</div>
+	<div class="carousel">
+		<ul>
+			<li>No prescription Required</li>
+			<li>All-natural ingredients</li>
+			<li>Formulated by doctors & PHDs</li>
+			<li>100% risk-free returns</li>
+			<li>100% risk-free returns</li>
+		</ul>
+	</div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"></script>
 <script>$(document).foundation();</script>
+
+<script>
+$(function () {
+	let $carousel = $('.carousel');
+	let $list = $carousel.find('ul');
+
+	function startScroll() {
+		let containerWidth = $carousel.width();
+		let listWidth = $list.outerWidth(true);
+
+		$list.css({ left: containerWidth });
+
+		$list.animate(
+			{ left: -listWidth },
+			15000, // speed (higher = slower)
+			'linear',
+			startScroll
+		);
+	}
+
+	startScroll();
+});
+</script>
 
 </body>
 </html>
