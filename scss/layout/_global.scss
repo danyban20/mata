@@ -1,14 +1,46 @@
 
+/* Margin helpers */
+$spacing-sizes: (sm: $spacing-sm, md: $spacing-md, lg: $spacing-lg, xl: $spacing-xl);
+
+@each $name, $size in $spacing-sizes {
+  /* Margin helpers */
+  .mt-#{$name} { margin-top: $size; }
+  .mb-#{$name} { margin-bottom: $size; }
+  .ml-#{$name} { margin-left: $size; }
+  .mr-#{$name} { margin-right: $size; }
+  .mx-#{$name} { margin-left: $size; margin-right: $size; }
+  .my-#{$name} { margin-top: $size; margin-bottom: $size; }
+
+  /* Padding helpers */
+  .pt-#{$name} { padding-top: $size; }
+  .pb-#{$name} { padding-bottom: $size; }
+  .pl-#{$name} { padding-left: $size; }
+  .pr-#{$name} { padding-right: $size; }
+  .px-#{$name} { padding-left: $size; padding-right: $size; }
+  .py-#{$name} { padding-top: $size; padding-bottom: $size; }
+}
+
+// vertical spacers
+.spacer-sm { height: $spacing-sm; }
+.spacer-md { height: $spacing-md; }
+.spacer-lg { height: $spacing-lg; }
+.spacer-xl { height: $spacing-xl; }
+
+// horizontal spacers (if needed)
+.spacer-w-sm { width: $spacing-sm; display: inline-block; }
+.spacer-w-md { width: $spacing-md; display: inline-block; }
+.spacer-w-lg { width: $spacing-lg; display: inline-block; }
+
 .btn-rounded{
 	border-radius: 35px;
 	display:inline-block;
-	width: 347px;
+	width:100%;
 	height: 51px;
 	font-family: RobotoMono;
 	font-size: 18px;
 	font-weight: 400;
 	text-align: center;
-	line-height: 24px;
+	line-height: 51px;
 }
 .btn-black{
 	background-color:$primary-color;
@@ -19,4 +51,11 @@
 	background-color: $color-yellow;	
 	color: rgba(46, 48, 46, 1);
 
+}
+
+.grid-container{
+	max-width: 1440px;
+}
+.inline-block {
+  display: inline-block !important;
 }

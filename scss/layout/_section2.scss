@@ -1,0 +1,65 @@
+.section2{
+	background-color: $color-light-blue;
+	font-family: "RobotoMono";
+	font-size: 18px;
+
+}
+.section2 h1{
+	font-family: "Inter-Black";
+	font-size:77px;
+	line-height:80px;
+	text-transform: uppercase;
+}
+.section2 .content ul{
+	list-style: none; 
+	padding:0;
+	margin:0;
+}
+.section2 .content ul li{
+	padding-left:40px;
+	background: url("../assets/images/bullet.png") no-repeat 0 6px;
+	margin-bottom:$spacing-md;
+}
+.section2 .btn-rounded{
+}	 
+
+.section2 .contentbox1{
+	background-color: $color-white;
+	border-radius:52px;
+	padding-top:74px;
+	padding-bottom:73px;
+}
+
+.section2 .part2 .grid .cellcontent{
+	max-width: 320px;
+	margin:0px auto;
+	position: relative;
+}
+.section2 .part2 .grid .cellcontent .stepnum{
+	position: absolute;
+	top:20px;
+	left:20px;
+	background-color: $color-white;
+	color:$primary-color;
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	border:1px solid #000;
+	font-family: 'Inter-Black';
+	font-family: 900;
+	font-size: 26px;
+}
+
+.section2 .part2 .grid .cellcontent .info > img{
+	float:left;
+}
+.section2 .part2 .grid .cellcontent .info > div{
+	float:left;
+
+}
+.section2 .part2 .grid .cellcontent:after{
+	content:"";
+	clear:both;
+}
