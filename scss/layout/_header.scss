@@ -1,1 +1,13 @@
 .site-header { padding: $spacing-md 0; border-bottom: 1px solid #eee; }
+.site-header h1{
+	opacity: 1;
+	color: rgba(46,48,46,1);
+	font-family: "Inter";
+	font-size: 50px;
+	font-weight: 900;
+	font-style: normal;
+	letter-spacing: -0.83px;
+	text-align: left; 
+	line-height: 52px;
+	text-transform: uppercase;
+}
