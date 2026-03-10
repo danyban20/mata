@@ -102,6 +102,28 @@ body {
   color: #000;
 }
 
+.btn-rounded {
+  border-radius: 35px;
+  display: inline-block;
+  width: 347px;
+  height: 51px;
+  font-family: RobotoMono;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-yellow {
+  background-color: #FFBA00;
+  color: rgb(46, 48, 46);
+}
+
 .site-header {
   border-bottom: 1px solid #eee;
 }
@@ -166,14 +188,8 @@ body {
 }
 
 .getStarted {
-  background-color: #000;
-  color: #fff;
   width: 201px;
   height: 46px;
-  border-radius: 35px;
-  text-align: center;
-  display: inline-block;
-  font-family: "RobotoMono";
   margin-right: 16px;
 }
 
@@ -210,19 +226,42 @@ body {
 
 .hero .btnTryToday {
   margin-top: 25px;
-  border-radius: 35px;
-  background-color: #FFBA00;
-  display: inline-block;
   width: 347px;
   height: 51px;
-  color: rgb(46, 48, 46);
-  font-family: RobotoMono;
-  font-size: 18px;
   font-weight: 400;
   text-align: center;
   line-height: 24px;
   padding-top: 13px;
+}
+
+.hero .leftSide {
+  position: relative;
+}
+
+.hero .rating {
+  margin-top: 100px;
+  color: #fff;
+  font-family: "RobotoMono";
+  font-size: 18px;
+  max-width: 331px;
   text-transform: uppercase;
+}
+
+.hero .rating .author {
+  margin-top: 20px;
+}
+
+.hero .rating .author .initial {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  width: 39px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  letter-spacing: -3px;
 }
 
 .product-card {

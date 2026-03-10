@@ -1,0 +1,22 @@
+
+.btn-rounded{
+	border-radius: 35px;
+	display:inline-block;
+	width: 347px;
+	height: 51px;
+	font-family: RobotoMono;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 24px;
+}
+.btn-black{
+	background-color:$primary-color;
+	color:$color-white;
+
+}
+.btn-yellow{
+	background-color: $color-yellow;	
+	color: rgba(46, 48, 46, 1);
+
+}
