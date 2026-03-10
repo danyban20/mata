@@ -1,0 +1,113 @@
+.section8{
+	background-color: $color-light-blue;
+	padding-top:$spacing-xl;
+	padding-bottom :$spacing-xl;
+	font-family: 'RobotoMono';
+	font-size: 18px;
+}
+.section8 .grid-container{
+	padding-top:$spacing-xl;
+	padding-bottom :$spacing-xl;
+
+}
+.section8 h2{
+	text-align: center;
+	font-family: 'Inter-Black';
+	font-size:50px;
+	line-height: 50px;
+	margin-bottom:$spacing-md;
+}
+.section8 .videos .video-wrap{
+	position:relative;
+	display: inline-block;
+	height: 558px;
+	width:332px;
+	background: url(../assets/images/video-bg.png) no-repeat top left;
+	background-size: cover;
+	border-radius: 30px;
+	padding:10px;
+	margin-right:10 px;
+}
+
+.section8 .videos .video-wrap .mute{
+	background-color: $color-white; 
+	border-radius: 50%;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border:1px solid #002657;
+	position:absolute;
+	top:10px;
+	right:10px;
+	cursor: pointer;
+}
+
+.section8 .videos .video-wrap .mute img{
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+.section8 .videos .video-wrap .play{
+	background-color: $color-white; 
+	border-radius: 50%;
+	width: 68px;
+	height: 68px;
+	line-height: 68px;
+	text-align: center;
+	border:1px solid #002657;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+.section8 .videos .video-wrap .mute:hover,
+.section8 .videos .video-wrap .play:hover{
+	background-color: transparent;
+}
+
+.section8 .videos .video-wrap .play img{
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-left:3px;
+}
+.section8 .videos .video-wrap .info{
+	background-color: $color-white; 
+	border-radius: 20px;
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	width:calc(100% - 20px);
+	padding:15px;
+	text-align: left;
+}
+.section8 .videos .video-wrap .info .title{
+	font-family: 'Inter-SemiBold';
+	font-size:15px;
+	color:#002657;
+	line-height: 16px;
+	margin:0;
+}
+.section8 .videos .video-wrap .info .price{
+	font-family: 'RobotoMono';
+	font-size: 14px;
+	color:#434C6C;
+}
+.section8 .videos .video-wrap .info .btn{
+	position:absolute;
+	bottom:20px; 
+	right:20px;
+}
+.section8 .videos .video-wrap .info .btnAddToCart{
+
+	height:42px;
+	background-color: $color-dark-blue;
+	border:1px solid $color-dark-blue;
+	color:$color-white;
+	line-height: 42px;
+
+}
+.section8 .videos .video-wrap .info .btnAddToCart:hover{
+	background-color: $color-white;
+	color:$color-dark-blue;
+}

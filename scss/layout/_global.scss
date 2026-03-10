@@ -69,6 +69,10 @@ $spacing-sizes: (sm: $spacing-sm, md: $spacing-md, lg: $spacing-lg, xl: $spacing
 	transform: translateY(-1px);
 }
 
+.text-yellow{
+	color:$color-yellow;
+} 
+
 .grid-container{
 	max-width: 1440px;
 }
@@ -77,4 +81,19 @@ $spacing-sizes: (sm: $spacing-sm, md: $spacing-md, lg: $spacing-lg, xl: $spacing
 }
 .ucase{
 	text-transform: uppercase;
+}
+.grid-gap-lg {
+  gap: $spacing-lg;
+}
+
+@media screen and (max-width: 64em) {
+	.btn-rounded{
+		height:auto;
+	}
+
+}
+@media screen and (max-width: 40em) { /* small down = 640px */
+	.btn-rounded{
+		height:auto;
+	}
 }

@@ -1,11 +1,13 @@
 .section5{
-	background-color: $color-white;
 	padding-top:$spacing-xl;
 	padding-bottom :$spacing-xl;
 	font-family: 'RobotoMono';
 	font-size: 18px;
+}
+.section5.bordered{
 	border-top:1px solid $primary-color;
 	border-bottom:1px solid $primary-color;
+	
 }
 .section5 hr{
 	height: 2px;
@@ -33,6 +35,10 @@
 	font-family: 'RobotoMono';
 	font-size: 18px;
 }
+.section5 .content ul{
+	list-style:none;
+	padding:0
+}
 .section5 .content ul li{
 	padding-left:40px;
 	background: url("../assets/images/bullet.png") no-repeat 0 6px;
@@ -48,7 +54,10 @@
 	border:1px solid $primary-color;
 	display: inline-block;
 	transition: background-color 1s ease, color 1s ease, border-color 1s ease, transform 1s ease;
-
+}
+.section5 .btnAddToCart span{
+	text-decoration:line-through;
+	color: rgba(255, 255, 255, 0.5);
 }
 .section5 .btnAddToCart:hover{
 	background-color: $color-white;

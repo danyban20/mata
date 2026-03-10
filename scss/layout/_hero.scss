@@ -1,5 +1,4 @@
 .hero{
-	height: 757px;
 	background: linear-gradient(232deg, 
 	rgba(70, 78, 112, 1) 0%, 
 	rgba(32, 55, 70, 1) 100%);	
@@ -70,4 +69,17 @@
 	display: inline-block;
 	border-radius: 50%;
 	letter-spacing: -3px;
+}
+
+@media screen and (max-width: 64em) {
+	.hero h1.headline,.hero h3{
+		width:auto;
+		height:auto;
+	}
+
+}
+@media screen and (max-width: 40em) { /* small down = 640px */
+  .hero h1.headline {
+		width:auto
+  }
 }

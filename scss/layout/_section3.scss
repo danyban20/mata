@@ -47,3 +47,18 @@
 	text-transform:uppercase;
 	margin-right: 50px;
 }
+
+@media screen and (max-width: 64em) {
+	.section3 .img h2{
+		width:auto;
+		bottom:10px;
+		left:10px;
+	}
+}
+@media screen and (max-width: 40em) { /* small down = 640px */
+	.section3 .img h2{
+		width:auto;
+		bottom:10px;
+		left:10px;
+	}
+}
